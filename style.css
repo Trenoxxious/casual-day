@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}
+
+html,
+body {
+    font-family: "Google Sans Code", sans-serif;
+    height: 100%;
+    background: rgb(37, 37, 37);
+}
+
+.yes,
+.no,
+.not-sure {
+    padding: 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-wrap: pretty;
+    text-align: center;
+    font-size: 74px;
+    height: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: stretch;
+}
+
+.yes {
+    color: rgb(59, 209, 59);
+}
+
+.no {
+    color: rgb(214, 24, 24);
+}
+
+.not-sure {
+    color: rgb(255, 219, 17);
+}
