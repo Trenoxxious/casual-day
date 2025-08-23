@@ -4,7 +4,7 @@ const noItIsnt = document.querySelector('.no');
 const notSure = document.querySelector('.not-sure');
 
 // Date constructor takes year, month, day (for testing) - without constructing returns the current date
-const date = new Date("2025 August 1");
+const date = new Date();
 const dayOfTheMonth = date.getDate();
 const fullMonthName = date.toLocaleString('default', { month: 'long' });
 const monthIndex = casualCalendar.findIndex(data => data.month === fullMonthName);
