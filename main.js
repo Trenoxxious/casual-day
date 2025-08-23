@@ -11,7 +11,6 @@ const monthIndex = casualCalendar.findIndex(data => data.month === fullMonthName
 
 // We check for casual day here
 function getCasualDay(month, day) {
-    debugger;
     if (month === -1) return notSure.style.display = 'flex';
 
     const monthToCheck = casualCalendar[month].days;
@@ -24,6 +23,7 @@ function getCasualDay(month, day) {
 
     if (isItCasual) {
         yesItIs.style.display = 'flex';
+        document.body.style = `background: linear-gradient(to bottom left, rgba(33, 68, 47, 1), rgb(26, 26, 26));`;
         if (unlockedDay) {
             yesItIs.innerHTML = `
                 <span style="color: rgb(255, 254, 243);">Yes, it is a <b>bonus</b> casual day.</span>
@@ -37,6 +37,7 @@ function getCasualDay(month, day) {
         }
     } else {
         noItIsnt.style.display = 'flex';
+        document.body.style = `background: linear-gradient(to bottom left, rgba(68, 66, 33, 1), rgb(26, 26, 26));`;
         if (lockedDay) {
             noItIsnt.innerHTML = `
                 <span style="color: rgb(255, 254, 243);">No, it is <b>not</b> a bonus casual day.</span>
