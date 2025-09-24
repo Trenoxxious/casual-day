@@ -10,7 +10,7 @@ const casualCalendar = [
     },
     {
         month: "October",
-        days: [],
+        days: [1, 2, 6, 7, 8, 9, 10, 13, 15, 21, 24, 30, 31],
     },
 ];
 
@@ -28,6 +28,6 @@ const bonusDays = [
     {
         month: "October",
         unlocked: [],
-        locked: [],
+        locked: [14, 23, 27, 29],
     },
 ];
