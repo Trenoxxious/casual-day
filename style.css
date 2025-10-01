@@ -9,7 +9,11 @@
 html,
 body {
     font-family: "Google Sans Code", sans-serif;
-    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
     background: linear-gradient(to bottom left, rgb(51, 51, 51), rgb(26, 26, 26));
 }
 
