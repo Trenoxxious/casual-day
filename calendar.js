@@ -27,7 +27,7 @@ const bonusDays = [
     },
     {
         month: "December",
-        unlocked: [11, 17, 30],
+        unlocked: [11, 17, 26, 29, 30],
         locked: [26],
     },
 ];
